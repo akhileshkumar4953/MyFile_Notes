@@ -1,0 +1,36 @@
+Create Project inside github manually and Copy the path Like https://github.com/akhileshkumar4953/MyFile_Notes
+Anf then exceute below command to save here from local file
+Push Local Files to GitHub
+
+Repository: MyFile_Notes GitHub Repository
+
+Step 1 — Open Project Folder
+
+Open terminal inside your local project folder.
+
+Example:
+
+cd Desktop/MyFile_Notes
+Step 2 — Initialize Git
+git init
+
+This starts Git in your folder.
+
+Step 3 — Add All Files
+git add .
+
+This prepares all files for commit.
+
+Step 4 — Commit Files
+git commit -m "First commit"
+
+This saves your code locally.
+
+Step 5 — Connect GitHub Repository
+git remote add origin https://github.com/akhileshkumar4953/MyFile_Notes.git
+
+This connects local folder to GitHub repository.
+
+Step 6 — Push Files to GitHub
+git branch -M main
+git push -u origin main
