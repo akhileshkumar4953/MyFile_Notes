@@ -1,0 +1,39 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-dom',
+  imports: [],
+  templateUrl: './dom.html',
+  styleUrl: './dom.css',
+})
+export class Dom implements OnInit {
+
+  message: string = "Hello Angular";
+
+  ngOnInit(): void {
+
+    console.log("DOM & BROWSER BASICS");
+
+    // 1. WINDOW OBJECT
+    console.log(window.innerWidth);
+    console.log(window.innerHeight);
+
+    // 2. LOCATION OBJECT
+    console.log(location.href);
+    console.log(location.hostname);
+
+    // 3. ARRAY OF DATA
+    const users: string[] = [
+      "Akhil",
+      "Rahul",
+      "John"
+    ];
+    console.log(users);
+  }
+
+  // 4. EVENT HANDLING
+  onClick(): void {
+    alert("Button Clicked");
+  }
+
+}
